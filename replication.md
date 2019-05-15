@@ -1,22 +1,14 @@
-<style>
-  .row {
-    display: flex;
-  }
-
-  .row > * {
-    flex: 0 0 33.33333%;
-    padding: 0 15px;
-    max-width: 33.33333%;
-    width: 100%;
-    position: relative;
-  }
-</style>
-
 # Determining how to replicate
 
-We need to know under exactly what conditions the issue occurs. To help figure this out, it's helpful to know of any specific browser errors. **You will need a MacOS device for these instructions.**
+We need to know under exactly what conditions the issue occurs. To help figure this out, it's helpful to know of any specific browser errors. **You will need a Mac and an iPhone for these instructions.**
 
-## Setup
+### Set up your Mac
+
+Open Safari. Go to `Safari > Preferences > Advanced` and check `Show Develop menu in menu bar`.
+
+![Develop menu](./1.png)
+
+## Mobile
 
 ### Set up your iPhone
 On your phone, go to `Settings > Safari > Advanced` and check `Web Inspector`.
@@ -30,12 +22,6 @@ On your phone, go to `Settings > Safari > Advanced` and check `Web Inspector`.
   ![Settings](./4.png)
 
 </div>
-
-### Set up your Mac
-
-Open Safari. Go to `Safari > Preferences > Advanced` and check `Show Develop menu in menu bar`.
-
-![Develop menu](./1.png)
 
 ### Connect your iPhone to your Mac
 
@@ -51,7 +37,7 @@ You should see the following screen:
 
 ![Console](./6.png)
 
-## Usage
+### Usage
 
 Browse the site like normal. When the error occurs, **do not refresh the page!** 
 
@@ -59,3 +45,35 @@ Browse the site like normal. When the error occurs, **do not refresh the page!**
 - Navigate to the `Network` tab (pictured below) and export its contents using the `Export` button at the upper right.
 
 ![Network tab](./7.png)
+
+## Desktop
+
+### Safari
+
+Visit the website you wish to troubleshoot. Open `Develop > Show JavaScript Console`. Click the `Detatch into separate window` icon (pictured below).
+
+![Detach](./8.png)
+
+You should see the following screen:
+
+![Console](./11.png)
+
+Browse the site like normal. When the error occurs, **do not refresh the page!** 
+
+- Take screenshots of the console window (pictured above) and your phone's screen
+- Navigate to the `Network` tab (pictured below) and export its contents using the `Export` button at the upper right.
+
+### Google Chrome
+
+Open the website you wish to troubleshoot. Go to `View > Developer > Javascript console`
+
+![Develop menu](./9.png)
+
+You should see the following screen:
+
+![Console](./10.png)
+
+Browse the site like normal. When the error occurs, **do not refresh the page!** 
+
+- Take screenshots of the console window (pictured above) and your phone's screen
+- Navigate to the `Network` tab (pictured below). To export its contents, right click on any row and choose `Save all as HAR with content`. 

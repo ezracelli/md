@@ -35,36 +35,57 @@
 
 </head>
 <body>
-<div class="markdown-body">
-  <h1 id="determining-how-to-replicate">Determining how to replicate</h1>
-  <p>We need to know under exactly what conditions the issue occurs. To help figure this out, it's helpful to know of any specific browser errors. <strong>You will need a MacOS device for these instructions.</strong></p>
-  <h2 id="setup">Setup</h2>
-  <h3 id="set-up-your-iphone">Set up your iPhone</h3>
-  <p>On your phone, go to <code>Settings &gt; Safari &gt; Advanced</code> and check <code>Web Inspector</code>.</p>
-  <div class="row">
-    <p><img src="./2.png" alt="Settings"></p>
-    <p><img src="./3.png" alt="Settings"></p>
-    <p><img src="./4.png" alt="Settings"></p>
+  <div class="markdown-body">
+      <h1 id="determining-how-to-replicate">Determining how to replicate</h1>
+      <p>We need to know under exactly what conditions the issue occurs. To help figure this out, it's helpful to know of any specific browser errors. <strong>You will need a Mac and an iPhone for these instructions.</strong></p>
+      <h3 id="set-up-your-mac">Set up your Mac</h3>
+      <p>Open Safari. Go to <code>Safari &gt; Preferences &gt; Advanced</code> and check <code>Show Develop menu in menu bar</code>.</p>
+      <p><img src="./1.png" alt="Develop menu"></p>
+      <h2 id="mobile">Mobile</h2>
+      <h3 id="set-up-your-iphone">Set up your iPhone</h3>
+      <p>On your phone, go to <code>Settings &gt; Safari &gt; Advanced</code> and check <code>Web Inspector</code>.</p>
+      <div class="row">
+      <p><img src="./2.png" alt="Settings"></p>
+      <p><img src="./3.png" alt="Settings"></p>
+      <p><img src="./4.png" alt="Settings"></p>
+      </div>
+      <h3 id="connect-your-iphone-to-your-mac">Connect your iPhone to your Mac</h3>
+      <p>Plug in your iPhone via USB cable, and select <strong>&quot;Trust&quot;</strong> on your iPhone (if you're prompted). Open up the desired site on Safari for iPhone.</p>
+      <blockquote>
+      <p>⚠️ You <strong>must</strong> use Safari, not Chrome!</p>
+      </blockquote>
+      <p>On your Mac, you should see your device under the <code>Develop</code> menu. Go to <code>Develop &gt; [Device Name] &gt; [Site Name]</code>, replacing <code>[Device Name]</code> for your iPhone's name and <code>[Site Name]</code> for the name of the site you have open on your iPhone.</p>
+      <p><img src="./5.png" alt="Connect to device"></p>
+      <p>You should see the following screen:</p>
+      <p><img src="./6.png" alt="Console"></p>
+      <h3 id="usage">Usage</h3>
+      <p>Browse the site like normal. When the error occurs, <strong>do not refresh the page!</strong></p>
+      <ul>
+      <li>Take screenshots of the console window (pictured above) and your phone's screen</li>
+      <li>Navigate to the <code>Network</code> tab (pictured below) and export its contents using the <code>Export</code> button at the upper right.</li>
+      </ul>
+      <p><img src="./7.png" alt="Network tab"></p>
+      <h2 id="desktop">Desktop</h2>
+      <h3 id="safari">Safari</h3>
+      <p>Visit the website you wish to troubleshoot. Open <code>Develop &gt; Show JavaScript Console</code>. Click the <code>Detatch into separate window</code> icon (pictured below).</p>
+      <p><img src="./8.png" alt="Detach"></p>
+      <p>You should see the following screen:</p>
+      <p><img src="./11.png" alt="Console"></p>
+      <p>Browse the site like normal. When the error occurs, <strong>do not refresh the page!</strong></p>
+      <ul>
+      <li>Take screenshots of the console window (pictured above) and your phone's screen</li>
+      <li>Navigate to the <code>Network</code> tab (pictured below) and export its contents using the <code>Export</code> button at the upper right.</li>
+      </ul>
+      <h3 id="google-chrome">Google Chrome</h3>
+      <p>Open the website you wish to troubleshoot. Go to <code>View &gt; Developer &gt; Javascript console</code></p>
+      <p><img src="./9.png" alt="Develop menu"></p>
+      <p>You should see the following screen:</p>
+      <p><img src="./10.png" alt="Console"></p>
+      <p>Browse the site like normal. When the error occurs, <strong>do not refresh the page!</strong></p>
+      <ul>
+      <li>Take screenshots of the console window (pictured above) and your phone's screen</li>
+      <li>Navigate to the <code>Network</code> tab (pictured below). To export its contents, right click on any row and choose <code>Save all as HAR with content</code>.</li>
+      </ul>
   </div>
-  <h3 id="set-up-your-mac">Set up your Mac</h3>
-  <p>Open Safari. Go to <code>Safari &gt; Preferences &gt; Advanced</code> and check <code>Show Develop menu in menu bar</code>.</p>
-  <p><img src="./1.png" alt="Develop menu"></p>
-  <h3 id="connect-your-iphone-to-your-mac">Connect your iPhone to your Mac</h3>
-  <p>Plug in your iPhone via USB cable, and select <strong>&quot;Trust&quot;</strong> on your iPhone (if you're prompted). Open up the desired site on Safari for iPhone.</p>
-  <blockquote>
-  <p>⚠️ You <strong>must</strong> use Safari, not Chrome!</p>
-  </blockquote>
-  <p>On your Mac, you should see your device under the <code>Develop</code> menu. Go to <code>Develop &gt; [Device Name] &gt; [Site Name]</code>, replacing <code>[Device Name]</code> for your iPhone's name and <code>[Site Name]</code> for the name of the site you have open on your iPhone.</p>
-  <p><img src="./5.png" alt="Connect to device"></p>
-  <p>You should see the following screen:</p>
-  <p><img src="./6.png" alt="Console"></p>
-  <h2 id="usage">Usage</h2>
-  <p>Browse the site like normal. When the error occurs, <strong>do not refresh the page!</strong></p>
-  <ul>
-  <li>Take screenshots of the console window (pictured above) and your phone's screen</li>
-  <li>Navigate to the <code>Network</code> tab (pictured below) and export its contents using the <code>Export</code> button at the upper right.</li>
-  </ul>
-  <p><img src="./7.png" alt="Network tab"></p>
-</div>
 </body>
 </html>
